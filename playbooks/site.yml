@@ -1,0 +1,8 @@
+---
+- name: Configure server with Docker and Nginx
+  hosts: web
+  become: yes
+  roles:
+    - docker
+    - nginx
+    - security
